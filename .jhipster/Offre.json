@@ -1,0 +1,72 @@
+{
+  "applications": "*",
+  "changelogDate": "20240518200734",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "offre",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "language",
+      "fieldType": "Language",
+      "fieldValues": "FRENCH,ENGLISH,SPANISH"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Offre",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "planning",
+      "otherEntityRelationshipName": "offre",
+      "relationshipName": "planning",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "theme",
+      "otherEntityRelationshipName": "offres",
+      "ownerSide": true,
+      "relationshipName": "themes",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "badge",
+      "otherEntityRelationshipName": "offres",
+      "ownerSide": true,
+      "relationshipName": "badges",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "pays",
+      "otherEntityRelationshipName": "offre",
+      "relationshipName": "pays",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

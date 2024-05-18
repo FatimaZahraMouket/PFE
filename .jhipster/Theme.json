@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20240518200732",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "theme",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Theme",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "offre",
+      "otherEntityRelationshipName": "themes",
+      "ownerSide": false,
+      "relationshipName": "offres",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20240518200735",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "planning",
+  "fields": [
+    {
+      "fieldName": "titre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jourNumero",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Planning",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "programme",
+      "otherEntityRelationshipName": "planning",
+      "relationshipName": "programme",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "planning",
+      "relationshipName": "photo",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "offre",
+      "otherEntityRelationshipName": "planning",
+      "relationshipName": "offre",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

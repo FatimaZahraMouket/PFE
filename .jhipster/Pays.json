@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20240518200731",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "pays",
+  "fields": [
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reviews",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "continent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "isSaved",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isLiked",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Pays",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "offre",
+      "otherEntityRelationshipName": "pays",
+      "relationshipName": "offre",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "pays",
+      "relationshipName": "photo",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Offre.
+    -->
+    <changeSet id="20240518200734-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="offre_id"
+                                 baseTableName="rel_offre__themes"
+                                 constraintName="fk_rel_offre__themes__offre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="offre"/>
+
+        <addForeignKeyConstraint baseColumnNames="themes_id"
+                                 baseTableName="rel_offre__themes"
+                                 constraintName="fk_rel_offre__themes__themes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="theme"/>
+
+        <addForeignKeyConstraint baseColumnNames="offre_id"
+                                 baseTableName="rel_offre__badges"
+                                 constraintName="fk_rel_offre__badges__offre_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="offre"/>
+
+        <addForeignKeyConstraint baseColumnNames="badges_id"
+                                 baseTableName="rel_offre__badges"
+                                 constraintName="fk_rel_offre__badges__badges_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="badge"/>
+
+        <addForeignKeyConstraint baseColumnNames="pays_id"
+                                 baseTableName="offre"
+                                 constraintName="fk_offre__pays_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pays"/>
+    </changeSet>
+</databaseChangeLog>

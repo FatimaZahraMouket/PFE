@@ -1,0 +1,27 @@
+{
+  "faeApp": {
+    "programme": {
+      "home": {
+        "title": "Programmes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Programme",
+        "createOrEditLabel": "Créer ou éditer un Programme",
+        "notFound": "Aucun Programme trouvé"
+      },
+      "created": "Un nouveau Programme a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Programme avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Programme avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Programme {{ id }} ?"
+      },
+      "detail": {
+        "title": "Programme"
+      },
+      "id": "ID",
+      "heure": "Heure",
+      "description": "Description",
+      "photo": "Photo",
+      "planning": "Planning"
+    }
+  }
+}

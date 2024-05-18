@@ -48,6 +48,23 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Pays.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Pays.class.getName() + ".offres");
+            createCache(cm, com.mycompany.myapp.domain.Pays.class.getName() + ".photos");
+            createCache(cm, com.mycompany.myapp.domain.Theme.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Theme.class.getName() + ".offres");
+            createCache(cm, com.mycompany.myapp.domain.Badge.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Badge.class.getName() + ".offres");
+            createCache(cm, com.mycompany.myapp.domain.Offre.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Offre.class.getName() + ".plannings");
+            createCache(cm, com.mycompany.myapp.domain.Offre.class.getName() + ".themes");
+            createCache(cm, com.mycompany.myapp.domain.Offre.class.getName() + ".badges");
+            createCache(cm, com.mycompany.myapp.domain.Planning.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Planning.class.getName() + ".programmes");
+            createCache(cm, com.mycompany.myapp.domain.Planning.class.getName() + ".photos");
+            createCache(cm, com.mycompany.myapp.domain.Programme.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Programme.class.getName() + ".photos");
+            createCache(cm, com.mycompany.myapp.domain.Photo.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,29 @@
+{
+  "faeApp": {
+    "planning": {
+      "home": {
+        "title": "Plannings",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Planning",
+        "createOrEditLabel": "Créer ou éditer un Planning",
+        "notFound": "Aucun Planning trouvé"
+      },
+      "created": "Un nouveau Planning a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Planning avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Planning avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Planning {{ id }} ?"
+      },
+      "detail": {
+        "title": "Planning"
+      },
+      "id": "ID",
+      "titre": "Titre",
+      "description": "Description",
+      "jourNumero": "Jour Numero",
+      "programme": "Programme",
+      "photo": "Photo",
+      "offre": "Offre"
+    }
+  }
+}

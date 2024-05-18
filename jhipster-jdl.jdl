@@ -1,0 +1,66 @@
+entity Pays {
+  label String,
+  description String,
+  reviews Integer,
+  continent String,
+  latitude Double,
+  longitude Double,
+  isSaved Boolean,
+  isLiked Boolean
+}
+
+entity Theme {
+  label String,
+  description String
+}
+
+entity Badge {
+  label String,
+  description String
+}
+
+entity Offre {
+  label String,
+  description String,
+  prix Double,
+  image String,
+  latitude Double,
+  longitude Double,
+  language Language
+}
+
+entity Planning {
+  titre String,
+  description String,
+  jourNumero Integer
+}
+
+entity Programme {
+  heure String,
+  description String
+}
+
+entity Photo {
+  url String
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+relationship OneToMany {
+  Pays to Offre{pays},
+  Offre to Planning{offre},
+  Planning to Programme{planning},
+  Pays to Photo{pays},
+  Planning to Photo{planning},
+  Programme to Photo{programme}
+}
+
+relationship ManyToMany {
+  Offre{themes} to Theme{offres}
+  Offre{badges} to Badge{offres}
+}
+
+
+paginate all with pagination

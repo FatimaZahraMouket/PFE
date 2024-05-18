@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20240518200737",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "photo",
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Photo",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "pays",
+      "otherEntityRelationshipName": "photo",
+      "relationshipName": "pays",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "planning",
+      "otherEntityRelationshipName": "photo",
+      "relationshipName": "planning",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "programme",
+      "otherEntityRelationshipName": "photo",
+      "relationshipName": "programme",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

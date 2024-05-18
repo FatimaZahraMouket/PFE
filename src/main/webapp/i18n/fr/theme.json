@@ -1,0 +1,26 @@
+{
+  "faeApp": {
+    "theme": {
+      "home": {
+        "title": "Themes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Theme",
+        "createOrEditLabel": "Créer ou éditer un Theme",
+        "notFound": "Aucun Theme trouvé"
+      },
+      "created": "Un nouveau Theme a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Theme avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Theme avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Theme {{ id }} ?"
+      },
+      "detail": {
+        "title": "Theme"
+      },
+      "id": "ID",
+      "label": "Label",
+      "description": "Description",
+      "offres": "Offres"
+    }
+  }
+}
